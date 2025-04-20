@@ -1,3 +1,4 @@
+/* General styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,105 +7,219 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #f4f4f4;
-  color: #1f2937;
+  background-color: #f7f8fa;
+  color: #333;
   line-height: 1.6;
 }
 
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px 0;
+h1, h2, h3, p {
+  margin-bottom: 16px;
 }
 
-/* Navbar */
-nav {
-  background-color: #1e3a8a;
-  color: white;
-  padding: 15px 0;
-}
-
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: white;
+a {
   text-decoration: none;
-  font-weight: 500;
+  color: #6c5ce7;
 }
 
-.nav-links a:hover {
-  color: #facc15;
+a:hover {
+  color: #4e4be3;
 }
 
 /* Header */
 header {
-  background-color: #1e40af;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
   color: white;
+  padding: 60px 0;
   text-align: center;
-  padding: 60px 20px;
 }
 
 header h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
 header p {
   font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 5px;
 }
 
-/* Sections */
-section h2 {
-  color: #1e3a8a;
-  margin-bottom: 15px;
-  border-left: 5px solid #facc15;
-  padding-left: 10px;
+/* Navigation */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff6a00;
+}
+
+nav .nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-links li {
+  display: inline;
+}
+
+nav .nav-links a {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  color: #ff6a00;
+}
+
+/* About Section */
+#about {
+  padding: 80px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Projects Section */
+#projects {
+  padding: 80px 0;
+  background-color: #f7f8fa;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .card {
-  background: white;
-  padding: 15px;
-  border-left: 4px solid #60a5fa;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Skills Section */
+#skills {
+  padding: 80px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
 }
 
 .skills {
-  list-style: none;
+  list-style-type: none;
   display: flex;
+  justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 .skills li {
-  background: #e0f2fe;
-  padding: 8px 12px;
-  border-radius: 4px;
+  background-color: #ff6a00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.skills li:hover {
+  background-color: #ee0979;
+}
+
+/* Contact Section */
+#contact {
+  padding: 80px 0;
+  background-color: #f7f8fa;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+#contact a {
+  color: #ff6a00;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #ee0979;
 }
 
 /* Footer */
 footer {
+  background-color: #ffffff;
   text-align: center;
   padding: 20px;
-  font-size: 0.9rem;
-  color: #6b7280;
-  margin-top: 30px;
+  font-size: 1rem;
+  color: #777;
+  margin-top: 40px;
 }
+
+footer p {
+  font-size: 1rem;
+}
+
 
