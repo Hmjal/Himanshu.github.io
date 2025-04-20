@@ -3,10 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Talha | ENTC Student & Dev</title>
+  <title>Talha | ENTC Student & Web Dev</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script>
+    // Smooth scroll behavior
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    });
+  </script>
 </head>
 <body>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Hi, I'm Talha</h1>
     <p>1st Year ENTC Student | Aspiring Web Developer | Cricket Lover 🏏</p>
@@ -45,7 +68,7 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
+    <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
     <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">yourname</a></p>
   </section>
@@ -55,4 +78,5 @@
   </footer>
 </body>
 </html>
+
 
