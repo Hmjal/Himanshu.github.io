@@ -8,8 +8,8 @@
 /* Fonts */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa;
-  color: #111827;
+  background-color: #fdfdfd;
+  color: #1F2937;
   line-height: 1.6;
   padding: 20px;
 }
@@ -18,7 +18,7 @@ body {
 header {
   text-align: center;
   padding: 60px 20px 30px;
-  background-color: #1e3a8a;
+  background-color: #4F46E5; /* Soft Indigo */
   color: #ffffff;
   border-radius: 10px;
 }
@@ -30,7 +30,7 @@ header h1 {
 
 header p {
   font-size: 1.2rem;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* Sections */
@@ -38,15 +38,15 @@ section {
   padding: 40px 20px;
   margin: 20px auto;
   max-width: 800px;
-  background-color: #ffffff;
+  background-color: #F9FAFB; /* light gray bg */
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
 }
 
 section h2 {
-  color: #1e3a8a;
+  color: #4F46E5;
   margin-bottom: 10px;
-  border-left: 5px solid #facc15;
+  border-left: 5px solid #FCD34D;
   padding-left: 10px;
 }
 
@@ -54,14 +54,14 @@ section h2 {
 .project {
   margin-bottom: 20px;
   padding: 15px;
-  border-left: 4px solid #60a5fa;
-  background-color: #f0f9ff;
+  border-left: 4px solid #A5B4FC;
+  background-color: #EEF2FF;
   border-radius: 6px;
 }
 
 .project h3 {
   margin-bottom: 5px;
-  color: #1e3a8a;
+  color: #4F46E5;
 }
 
 /* Skills */
@@ -71,21 +71,22 @@ ul {
 }
 
 ul li {
-  background: #e0f2fe;
+  background: #E0E7FF;
   padding: 10px;
   margin: 5px 0;
   border-radius: 4px;
+  color: #1F2937;
 }
 
 /* Contact links */
 #contact a {
-  color: #1e3a8a;
+  color: #4F46E5;
   text-decoration: none;
   font-weight: bold;
 }
 
 #contact a:hover {
-  color: #facc15;
+  color: #FCD34D;
 }
 
 /* Footer */
@@ -93,5 +94,5 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #6B7280;
 }
