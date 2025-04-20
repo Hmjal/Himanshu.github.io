@@ -5,70 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Talha | ENTC Student & Web Dev</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script>
-    // Smooth scroll behavior
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function(e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
-        });
-      });
-    });
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="container">
+      <h1 class="logo">Talha</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <header>
-    <h1>Hi, I'm Talha</h1>
-    <p>1st Year ENTC Student | Aspiring Web Developer | Cricket Lover 🏏</p>
+    <div class="container">
+      <h2>Hey, I'm Talha</h2>
+      <p>ENTC Student | Future Web Developer | Cricket Lover 🏏</p>
+    </div>
   </header>
 
-  <section id="about">
+  <section id="about" class="container">
     <h2>About Me</h2>
-    <p>
-      I'm a first-year ENTC student at MITAOE, passionate about tech, creativity, and cricket.
-      I enjoy building cool things on the web and learning every day. Outside coding,
-      I love watching and playing cricket matches with friends.
-    </p>
+    <p>I'm a first-year ENTC student at MITAOE, passionate about building on the web, tech, and of course—cricket. I enjoy creating simple, clean, and useful digital experiences.</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="container">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="card">
       <h3>Restaurant Feedback App</h3>
-      <p>A simple feedback system with menu, QR payment, and ratings — built using Python.</p>
+      <p>A feedback system with menu, QR payment, and ratings — built using Python.</p>
     </div>
-    <div class="project">
-      <h3>Personal Portfolio Website</h3>
-      <p>This very portfolio! Coded with HTML and CSS from scratch.</p>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>This very site — handcrafted with HTML & CSS!</p>
     </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="container">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript (Basics)</li>
+    <ul class="skills">
+      <li>HTML & CSS</li>
+      <li>JavaScript (Basics)</li>
       <li>Python (CS50P)</li>
       <li>Git & GitHub</li>
-      <li>Teamwork & Communication</li>
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="container">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
     <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">yourname</a></p>
   </section>
