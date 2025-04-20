@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f7f8fa;
+  background-color: #f0f7ff;
   color: #333;
   line-height: 1.6;
 }
@@ -18,42 +18,45 @@ h1, h2, h3, p {
 
 a {
   text-decoration: none;
-  color: #6c5ce7;
+  color: #5b3fbe;
+  font-weight: 600;
 }
 
 a:hover {
-  color: #4e4be3;
+  color: #fc6b03;
 }
 
 /* Header */
 header {
-  background: linear-gradient(to right, #ff6a00, #ee0979);
+  background: linear-gradient(45deg, #ff88e1, #40c0cb);
   color: white;
   padding: 60px 0;
   text-align: center;
+  border-radius: 0 0 20px 20px;
 }
 
 header h2 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   margin-top: 5px;
 }
 
 /* Navigation */
 nav {
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
+  border-bottom: 4px solid #ff88e1;
 }
 
 nav .container {
@@ -66,15 +69,15 @@ nav .container {
 }
 
 nav .logo {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: #ff6a00;
+  color: #ff88e1;
 }
 
 nav .nav-links {
   list-style-type: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 nav .nav-links li {
@@ -83,58 +86,64 @@ nav .nav-links li {
 
 nav .nav-links a {
   color: #333;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   padding: 5px 0;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 nav .nav-links a:hover {
-  color: #ff6a00;
+  color: #ff88e1;
+  transform: scale(1.1);
 }
 
 /* About Section */
 #about {
   padding: 80px 0;
-  background-color: #ffffff;
+  background-color: white;
   text-align: center;
 }
 
 #about h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #333;
 }
 
 #about p {
   font-size: 1.2rem;
-  color: #777;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
 /* Projects Section */
 #projects {
   padding: 80px 0;
-  background-color: #f7f8fa;
+  background-color: #e3f2fd;
 }
 
 #projects h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 30px;
+  color: #5b3fbe;
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: white;
   padding: 20px;
   margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #333;
 }
@@ -142,6 +151,11 @@ nav .nav-links a:hover {
 .card p {
   font-size: 1rem;
   color: #555;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Skills Section */
@@ -152,7 +166,7 @@ nav .nav-links a:hover {
 }
 
 #skills h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #333;
 }
@@ -161,51 +175,53 @@ nav .nav-links a:hover {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .skills li {
-  background-color: #ff6a00;
+  background-color: #5b3fbe;
   color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 15px 30px;
+  border-radius: 30px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .skills li:hover {
-  background-color: #ee0979;
+  background-color: #fc6b03;
+  transform: scale(1.1);
 }
 
 /* Contact Section */
 #contact {
   padding: 80px 0;
-  background-color: #f7f8fa;
+  background-color: #e3f2fd;
   text-align: center;
 }
 
 #contact h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #333;
 }
 
 #contact p {
   font-size: 1.2rem;
-  color: #777;
+  color: #555;
 }
 
 #contact a {
-  color: #ff6a00;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: #ff88e1;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 #contact a:hover {
-  color: #ee0979;
+  color: #fc6b03;
+  transform: scale(1.1);
 }
 
 /* Footer */
@@ -216,10 +232,12 @@ footer {
   font-size: 1rem;
   color: #777;
   margin-top: 40px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
   font-size: 1rem;
 }
+
 
 
