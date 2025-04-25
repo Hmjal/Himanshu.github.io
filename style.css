@@ -42,6 +42,23 @@ nav .container {
   justify-content: space-between;
   align-items: center;
 }
+/* Make certificate images full width */
+.certificate-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+/* Your normal project images can stay smaller */
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 
 header {
   background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
