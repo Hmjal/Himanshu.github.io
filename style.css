@@ -54,9 +54,7 @@ nav .container {
 /* Your normal project images can stay smaller */
 .project-img {
   width: 100%;           /* Fill the card width */
-  height: auto;          /* Keep aspect ratio */
-  max-height: 300px;     /* Optional: limit height to keep cards same size */
-  object-fit: cover;     /* Crop nicely if image is too tall */
+  height: auto;          /* Keep aspect ratio */     /* Optional: limit height to keep cards same size */     /* Crop nicely if image is too tall */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin-bottom: 1rem;
