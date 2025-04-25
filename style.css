@@ -1,179 +1,127 @@
-/* Reset & Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
   color: #333;
-  line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
-/* Container Utility */
 .container {
-  max-width: 960px;
+  width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px;
 }
 
-/* Navbar */
 nav {
-  background-color: #fff3e6;
-  border-bottom: 2px solid #ffcc99;
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 20px 0;
 }
 
-.logo {
-  font-size: 1.8rem;
+nav .logo {
+  font-size: 24px;
   font-weight: 700;
-  color: #e67300;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  gap: 25px;
+  gap: 20px;
+  padding: 0;
 }
 
 .nav-links li a {
+  color: #fff;
   text-decoration: none;
-  color: #3a3a3a;
   font-weight: 500;
-  transition: all 0.3s ease;
 }
 
-.nav-links li a:hover {
-  color: #e67300;
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Header Section */
 header {
-  background-color: #ffeedd;
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
   text-align: center;
-  padding: 80px 0;
-  border-bottom: 2px solid #ffd9b3;
+  padding: 60px 20px;
 }
 
-header h2 {
-  font-size: 3rem;
-  color: #e67300;
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
-header p {
-  font-size: 1.2rem;
-  color: #5a5a5a;
+h3 {
+  margin-top: 0;
+  font-size: 24px;
 }
 
-/* Section Headings */
-section h2 {
-  font-size: 2rem;
-  color: #cc6600;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* About Section */
-#about {
-  background-color: #fff8f0;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-#about p {
-  max-width: 700px;
-  margin: 0 auto;
-  color: #4f4f4f;
-}
-
-/* Projects */
-#projects {
-  background-color: #fff3e6;
-  padding: 60px 20px;
+p {
+  line-height: 1.6;
 }
 
 .card {
-  background-color: #ffffff;
-  border: 1px solid #ffddbb;
-  border-radius: 12px;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
   padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 12px rgba(255, 204, 153, 0.15);
-  transition: transform 0.2s ease;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
 }
 
-.card h3 {
-  color: #cc6600;
-  margin-bottom: 10px;
+.project-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
 }
 
-.card p {
-  color: #5c5c5c;
-}
-
-/* Skills */
-#skills {
-  background-color: #fff8f0;
-  padding: 60px 20px;
-  text-align: center;
+.card:hover .project-img {
+  transform: scale(1.05);
 }
 
 .skills {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
+  gap: 10px;
 }
 
 .skills li {
-  background-color: #ffe0b3;
-  color: #5a3d1e;
-  padding: 10px 20px;
-  border-radius: 20px;
+  background-color: #e0f7fa;
+  padding: 10px 16px;
+  border-radius: 12px;
   font-weight: 500;
-  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact */
-#contact {
-  background-color: #fff3e6;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-#contact a {
-  color: #e67300;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
 footer {
-  background-color: #fff8f0;
   text-align: center;
   padding: 20px;
-  font-size: 0.9rem;
-  color: #777;
-  border-top: 2px solid #ffcc99;
+  background-color: #4f46e5;
+  color: #fff;
+  font-size: 14px;
 }
+
 
 
 
